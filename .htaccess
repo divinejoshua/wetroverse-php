@@ -1,0 +1,26 @@
+RewriteEngine On
+RewriteRule ^home?$ index.php
+RewriteRule ^following?$ follow.php
+RewriteRule ^discover?$ discover.php
+RewriteRule ^notification?$ notification.php
+
+RewriteRule ^edit?$ edit.php
+RewriteRule ^search?$ search.php
+RewriteRule ^trend?$ trend.php
+RewriteRule ^suggestion?$ suggestion.php
+RewriteRule ^followers?$ followers.php?username=$1
+RewriteRule ^follow?$ following.php
+RewriteRule ^following?$ follow.php
+RewriteRule ^post/?$ post.php?posttoken=$1
+RewriteRule ^addpost?$ addpost.php
+
+
+RewriteRule ^fpassword?$ fpassword.php
+RewriteRule ^login?$ login.php
+RewriteRule ^register?$ register.php
+RewriteRule ^welcome?$ welcome.php
+RewriteRule ^load?$ load.php
+RewriteRule ^start?$ start.php
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ profile.php?username=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ profile.php?username=$1
